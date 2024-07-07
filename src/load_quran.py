@@ -1,6 +1,9 @@
 import json
 from dataclasses import dataclass
 
+# import arabic_reshaper
+# from bidi.algorithm import get_display
+
 
 """
 (Example output)
@@ -34,13 +37,13 @@ In [3]: with open("quran_en.json") as f:
 
 @dataclass()
 class ayah_data:
-    text: str
+    arabic_text: str
     translation: str
 
 
 @dataclass
 class surah_data:
-    surah_name: str
+    surah_name_english: str
     surah_name_arabic: str
     revelation_place: str
     total_verses: int
@@ -48,7 +51,7 @@ class surah_data:
 
 
 def load_quran(filename: str) -> list[surah_data]:
-    quran_data = []
+    quran_data: list[surah_data] = []
 
     with open("quran.json") as f:
         quran = json.loads(f.read())
@@ -66,4 +69,6 @@ def load_quran(filename: str) -> list[surah_data]:
                 )
             )
 
-    print(quran_data)
+    # print(quran_data)
+
+    return quran_data
