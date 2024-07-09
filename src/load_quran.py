@@ -45,9 +45,9 @@ class ayah_data:
 class surah_data:
     surah_name_english: str
     surah_name_arabic: str
-    revelation_place: str
-    total_verses: int
-    verses: list[ayah_data]
+    revelation_location: str
+    total_verses_number: int
+    ayahs: list[ayah_data]
 
 
 def load_quran(filename: str) -> list[surah_data]:
