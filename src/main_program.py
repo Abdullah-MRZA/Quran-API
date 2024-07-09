@@ -1,6 +1,4 @@
-from rich import print
 import load_quran
-# from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 
 def main() -> None:
