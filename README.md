@@ -26,3 +26,7 @@ print(fatiha_verses[0].translation)
 for verse_number in range(quran_data[0].total_verses_number):
     print(quran_data[0].ayahs[verse_number])
 ```
+
+This would produce the following output:
+
+![image](https://github.com/Abdullah-MRZA/Quran-API/assets/173486425/69e836d6-bc61-4012-a2af-626e1ac36b45)
