@@ -17,9 +17,9 @@ def main() -> None:
     print(fatiha_verses[0].arabic_text)
     print(fatiha_verses[0].translation)
 
-    # print the arabic of surah fatiha
-    for verse_number in range(quran_data[0].total_verses_number):
-        print(quran_data[0].ayahs[verse_number])
+    # # print the arabic of surah fatiha
+    for ayah in quran_data[0].ayahs:
+        print(ayah)
 
 
 if __name__ == "__main__":
