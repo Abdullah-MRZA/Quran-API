@@ -1,9 +1,8 @@
 # Quran-API
-A program that provides easy access to the Quran (and translation)
+A program that provides easy access to the Quran (and its translation).
 
 ## How to use
-
-the following example (also found in `main_program.py`) gives an overview of how it can be used:
+The following example (also found in `main_program.py`) gives an overview of how it can be used:
 
 ```py
 import load_quran
