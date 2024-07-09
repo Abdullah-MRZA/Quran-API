@@ -53,7 +53,7 @@ class surah_data:
 def load_quran(filename: str) -> list[surah_data]:
     quran_data: list[surah_data] = []
 
-    with open("quran.json") as f:
+    with open("quran.json", encoding="utf-8") as f:
         quran = json.loads(f.read())
         for surah in quran:
             quran_data.append(
