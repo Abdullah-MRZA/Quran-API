@@ -1,5 +1,8 @@
 import load_quran
 
+# for colours, import rich (using `pip install rich`), and uncomment the following line
+# from rich import print
+
 
 def main() -> None:
     quran_data = load_quran.load_quran("quran.json")
